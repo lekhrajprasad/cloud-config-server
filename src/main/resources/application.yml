@@ -21,7 +21,7 @@ eureka:
        #  enabled: true
 logging:
    level:
-      root: DEBUG
+      root: INFO
    pattern:
 #org.springframework.cloud: DEBUG
       console: '%-5level [%thread]-${PID} %logger{36}  - %msg%n'

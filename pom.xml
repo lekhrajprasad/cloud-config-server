@@ -11,7 +11,7 @@
 	</parent>
 	<groupId>com.lpras.myconfigserver</groupId>
 	<artifactId>my-cloud-config-server</artifactId>
-	<version>v1</version>
+	<version>v1d</version>
 	<name>my-cloud-config-server</name>
 	<description>Demo project for Spring Boot</description>
 

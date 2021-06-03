@@ -9,4 +9,4 @@ spring:
       config:
          server:
             git: 
-               uri: E:\jenkins-workspace\cloud-config-repo
+               uri: https://github.com/lekhrajprasad/cloud-config-repo
