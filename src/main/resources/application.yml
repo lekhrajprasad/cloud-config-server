@@ -1,24 +1,27 @@
 server:
-   port: 2345
+   port: 8888
 spring:
    profiles:
       active: dev
    application:
       name: my-cloud-config-server
+   rabbitmq:
+      addresses: amqps://xrjbysaw:ESAki5A7fkGit0EMD3q2N6Z7V_KCK69J@fox.rmq.cloudamqp.com/xrjbysaw
    cloud:
       config:
          server:
-            #git: uri:https://github.com/lekhrajprasad/cloud-config-repo
-            uri: C:\dev\workspace\cloud-config-repo
+            git: 
+               uri: https://github.com/lekhrajprasad/cloud-config-repo
+            #uri: "E:\\jenkins-workspace\\cloud-config-repo"
 eureka:
    client:
       service-url:
          defaultZone: http://localhost:8762/eureka
-      healthcheck:
-         enabled: true
+      #healthcheck:
+       #  enabled: true
 logging:
    level:
-      root: INFO
+      root: DEBUG
    pattern:
 #org.springframework.cloud: DEBUG
       console: '%-5level [%thread]-${PID} %logger{36}  - %msg%n'
